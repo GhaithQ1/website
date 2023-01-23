@@ -1,0 +1,89 @@
+.acproject{
+    background-color: rgba(68, 68, 68, 0.1);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.projects{
+  padding: 20px;
+}
+.box{
+  padding: 20px;
+}
+
+.box .content{
+  
+}
+.box .content .text{
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box .content .text p{
+font-size: 18px;
+}
+.box .content h6{
+    font-size: 12px;
+    color: var(--color_Text);
+    margin-top: 10px;
+    display: block;
+    font-weight: 100;
+}
+.box .content .text span{
+  font-size: 14px;
+    color: var(--color_Text);
+    margin-top: -20px;
+}
+
+.box .content .imgs img{
+     width: 40px;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+.box .content .imgs img:not(:first-child){
+  margin-left: -20px;
+}
+.box .content .skills{
+      display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    padding: 20px 0;
+    border-top: 1px solid var(--color);
+    border-bottom: 1px solid var(--color);
+}
+.box .content .skills p{
+  padding: 5px 10px;
+    font-size: 12px;
+    background-color: var(--color);
+    border-radius: 10px;
+}
+
+.box .content .dolar{
+      display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 0 0;
+}
+.box .content .dolar .progres{
+  width: 70%;
+    height: 10px;
+    background-color: var(--color);
+    border-radius: 10px;
+    position: relative;
+}
+.box .content .dolar .progres span{
+  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: red;
+    border-radius: 10px;
+}
+.box .content .dolar p{
+      font-size: 13px;
+    color: var(--color_Text);
+}

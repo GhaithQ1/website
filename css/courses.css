@@ -1,0 +1,87 @@
+.courses {
+  padding: 20px;
+}
+
+.accours{
+  background-color: rgba(68, 68, 68, 0.1);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.containeres {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 0;
+}
+.box {
+  position: relative;
+  background-color: white;
+  z-index: -2;
+}
+.box img {
+  width: 100%;
+}
+.box h4 {
+  padding: 20px 0 20px 10px;
+  font-size: 15px;
+}
+.box p {
+      padding: 0 10px 20px;
+    font-size: 14px;
+    color: var(--color_Text);
+    line-height: 1.7;
+}
+.box .test{
+  display: flex;
+    justify-content: center;
+    position: relative;
+}
+.box span {
+  font-size: 14px;
+    background-color: #2196f3;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
+.box .test::before{
+  content: "";
+  width: 100%;
+  height: 1px;
+    background-color: #ddd;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  z-index: -1;
+}
+.box .icon {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.box .icon i{
+  font-size: 14px;
+    color: var(--color_Text);
+}
+
+.box .icon img {
+  width: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}

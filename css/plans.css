@@ -1,0 +1,133 @@
+
+.acplans{
+    background-color: rgba(68, 68, 68, 0.1);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.plans {
+  padding: 20px;
+}
+
+.containers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+.box {
+  padding: 20px;
+}
+.box .text {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+.box .text::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  border: 2px solid #4caf50;
+}
+.box .text::after {
+  content: "";
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  background-color: #4caf50;
+}
+.box .text p {
+  z-index: 2;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+.box .text span {
+  z-index: 2;
+  color: white;
+  font-size: 30px;
+  position: relative;
+}
+.box .text span::before {
+  content: "$";
+  color: white;
+  z-index: 2;
+  font-size: 20px;
+  position: absolute;
+  left: -15px;
+}
+.box .content {
+}
+.box .content .cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ececec;
+}
+.box .content .cont i {
+  font-size: 13px;
+}
+
+.box .content .cont .true_flase {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.box .content .cont .true_flase i {
+  font-size: 14px;
+}
+
+.icon-checkmark {
+  color: #4caf50;
+}
+.icon-cross {
+  color: red;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 10px 0 0;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+}
+
+.box .tow::before {
+  border-color: #3f51b5;
+}
+.box .tow::after {
+  background-color: #3f51b5;
+}
+.but-tow {
+  background-color: #3f51b5;
+}
+.box .three::before {
+  border-color: #ff9800;
+}
+.box .three::after {
+  background-color: #ff9800;
+}
+.plan {
+  margin: 20px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.plan span {
+  color: var(--color_Text);
+  font-size: 15px;
+}
